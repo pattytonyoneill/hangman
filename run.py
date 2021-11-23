@@ -1,5 +1,6 @@
 import random
 from words import words
+import string
 
 """
 Get a valid word
@@ -24,4 +25,7 @@ def hangman():
     letters guessed by user
     """
     guessed_letters = set()  
+
+user_input = input('Please enter your guess: ')
+print(user_input)
     
