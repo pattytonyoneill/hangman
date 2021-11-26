@@ -12,6 +12,8 @@
 2. If you get it right the letter it is put in the space. If it is wrong Hangman form starts to come up.
 3. Keep guessing until either you guess the word and win or end up with a hangman and no lives left.
 
+- ![image](testing/beginning_game.png)
+
 ## Existing Features
 - _Random word generation_
 - _Accepts user input_s
