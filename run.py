@@ -20,6 +20,11 @@ def hangman():
     """letters guessed by user"""
     used_letters = set()
     lives = 7
+    print('Welcome to Hangman!')
+    print('You have 7 lives. Please choose a letter.')
+    print('If wrong loose a life and see the hangman go up.')
+    print('Good Luck!')
+    print(' ')
 
     """getting user input"""
     while len(word_letters) > 0 and lives > 0:
