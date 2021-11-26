@@ -15,10 +15,10 @@ def get_valid_word(words):
 def hangman():
     word = get_valid_word(words)
     """letters in the word"""
-    word_letters = set(word)  
+    word_letters = set(word)
     alphabet = set(string.ascii_uppercase)
     """letters guessed by user"""
-    used_letters = set()  
+    used_letters = set()
     lives = 7
 
     """getting user input"""
@@ -41,7 +41,7 @@ def hangman():
 
             else:
                 """Removes a life if wrong"""
-                lives = lives - 1  
+                lives = lives - 1
                 print('\nSorry, your letter,', user_letter, 'is not in the word.')
 
         elif user_letter in used_letters:
