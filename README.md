@@ -2,7 +2,7 @@
 - Hangman is a Python Terminal game, which runs on a mock terminal in Heroku.
 - Users guess letters from a word until they run out of lives or guess the word correctly.
 
-![image](testing/reponsive.jpg)
+![image](testing/responsive.jpg)
 
 ## Lucid Chart
 ![image](testing/lucid_chart.jpg)
