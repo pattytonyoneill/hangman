@@ -24,10 +24,10 @@ def hangman():
     """getting user input"""
     while len(word_letters) > 0 and lives > 0:
         """Tell user the lives lefft and the letters that were used"""
-        print('You have', lives, 'lives left and you have used these letters: ', ' '.join(used_letters))
+        print('You have', lives, 'lives left and you have used these letters: ', ' '.join(used_letters))  # noqa
 
         """Current word"""
-        word_list = [letter if letter in used_letters else '-' for letter in word]
+        word_list = [letter if letter in used_letters else '-' for letter in word]  # noqa
         print(lives_visual_dict[lives])
         print('Current word: ', ' '.join(word_list))
 
@@ -42,10 +42,10 @@ def hangman():
             else:
                 """Removes a life if wrong"""
                 lives = lives - 1
-                print('\nSorry, your letter,', user_letter, 'is not in the word.')
+                print('\nSorry, your letter,', user_letter, 'is not in the word.')  # noqa
 
         elif user_letter in used_letters:
-            print('\nSorry, you have already used that letter. Please guess another letter.')
+            print('\nSorry, you have already used that letter. Please guess another letter.')  # noqa
 
         else:
             print('\nSorry, that is not a valid letter.')

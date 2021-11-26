@@ -2,7 +2,8 @@
 - Hangman is a Python Terminal game, which runs on a mock terminal in Heroku.
 - Users guess letters from a word until they run out of lives or guess the word correctly.
 
-![image]()
+
+![image](testing/reponsive.jpg)
 
 ## How to Play
 1. Guess a letter
@@ -12,8 +13,11 @@
 ## Existing Features
 - _Random word generation_
 - _Accepts user input_
+- ![image](testing/start_of_hangman.jpg)
 - _Keeps track of right and wrong guesses_
+- ![image](testing/wrong_answer.jpg)
 - _Input validation and score checking_
+- ![image](testing/answer_checking.jpg)
 
 ## User Stories:
 - _First time Visitor Goals_
@@ -33,7 +37,7 @@
 - [Am I Responsive?](http://ami.responsivedesign.is/) Used on Readme to show how the application looks on different devices.
 
 ## Bugs
-- Getting while loop to work correctly. Firstly I took a couple of days away from the code. Next I rewrote this several times until I got it right.
+- Getting while loop to work correctly. First, I took a couple of days away from the code. Next I rewrote this several times until I got it right.
 
 - When I deployed my code it did not deploy correctly.  I had to redo pip3 line due to a typo on that line and it was right immediately after that.
 
@@ -79,6 +83,7 @@
 
 ## Validator Testing
 -  Pep8
+     - ![image](testing/pep8.png)
 
 ## Deployment
 
