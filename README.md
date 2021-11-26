@@ -4,6 +4,9 @@
 
 ![image](testing/reponsive.jpg)
 
+## Lucid Chart
+![image](testing/lucid_chart.jpg)
+
 ## How to Play
 1. Guess a letter
 2. If you get it right the letter it is put in the space. If it is wrong Hangman form starts to come up.
@@ -11,15 +14,12 @@
 
 ## Existing Features
 - _Random word generation_
-- _Accepts user input_
+- _Accepts user input_s
 - ![image](testing/start_of_hangman.jpg)
 - _Keeps track of right and wrong guesses_
 - ![image](testing/wrong_answer.jpg)
 - _Input validation and score checking_
 - ![image](testing/answer_checking.jpg)
-
-## Lucid Chart
-![image](testing/lucid_chart.jpg)
 
 ## User Stories:
 - _First time Visitor Goals_
@@ -50,6 +50,7 @@
 
 - Mutiplayer function
 - Ability to choose the length of the word
+- A timer to make the guess be done within a certain time period.
 
 
 ## Testing
