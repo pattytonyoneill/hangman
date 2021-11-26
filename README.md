@@ -78,6 +78,7 @@
     - Tested in my local terminal as well as on Heroku.
 
 ## Validator Testing
+-  Pep8
 
 ## Deployment
 
@@ -90,16 +91,6 @@
   -  Click on Deploy
 
 The live link can be found here - 
-
-### Local Deployment
-
-In order to make a local copy of this repository, you can clone it by typing the following into your IDE Terminal:
-
-- `git clone https://github.com/pattytonyoneill/hangman.git`
-
-Alternatively, if using Gitpod, you can click below to create your own workspace using this repository.
-
-[![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/pattytonyoneill/hangman)
 
 ## Credits
 
