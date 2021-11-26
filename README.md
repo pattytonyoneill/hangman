@@ -19,6 +19,9 @@
 - _Input validation and score checking_
 - ![image](testing/answer_checking.jpg)
 
+## Lucid Chart
+![image](testing/lucid_chart.jpg)
+
 ## User Stories:
 - _First time Visitor Goals_
   - As a first time user of this site, I would like to be able to easily decifer the main purpose of the game
@@ -43,31 +46,6 @@
 
 ## Remaining Bugs
 - No bugs are remaining
-
-## Features:
-
-- _Responsive on all device sizes_
-
-  - _Desktop_
-
-    - ![image]()
-
-  - _Tablet_
-
-    - ![image]()
-  - _Cell Phone_
-
-    - ![image]()
-
-- _Interactive Elements_
-
-  -  The buttons on this page make it possible to easily navigate to the game that the user wishes to play. 
-
-    - ![image]()
-
-  - The user clicks on the correct answer and continues on to the next question
-    - ![image]()
-
   
 ## Future Additions to page
 
