@@ -6,6 +6,8 @@
 
 - When I deployed my code it did not deploy correctly.  I had to redo pip3 line due to a typo on that line and it was right immediately after that
 
+- When I added a clear message my welcome message was not showing.  I fixed this by putting clear under individual statements in the code so it clears.
+
 
 ## Testing
 
