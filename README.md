@@ -37,45 +37,42 @@
 
 - [Git](https://git-scm.com): used to utilize the Gitpod terminal to commit to Git and Push to GitHub
 - [GitHub](https://github.com/): used to store project code after being pushed from Git
+- [GitPod](https://gitpod.io/): used as cloud based IDE for writing code
 - [Lucid Charts](https://www.lucidchart.com/pages/): used to draw a chart of the hangman game process
 - [Am I Responsive?](http://ami.responsivedesign.is/) Used on Readme to show how the application looks on different devices.
 
-## Bugs
-- Getting while loop to work correctly. First, I took a couple of days away from the code. Next I rewrote this several times until I got it right.
-
-- When I deployed my code it did not deploy correctly.  I had to redo pip3 line due to a typo on that line and it was right immediately after that.
-
-## Remaining Bugs
-- No bugs are remaining
-  
 ## Future Additions to page
 
 - Mutiplayer function
 - Ability to choose the length of the word
 - A timer to make the guess be done within a certain time period.
 
-
 ## Testing
 
-- I have manually tested this project by doing the following:
-    - Given invalid inputs such as a number and a repeat of previous letter used.
-    - Tested in my local terminal as well as on Heroku.
-
-## Validator Testing
--  Pep8
-     - ![image](testing/pep8.png)
+To view all testing, go to [TESTING.md]()
 
 ## Deployment
 
 - The site was deployed to Heroku. I used the steps listed below to deploy. 
   -  Fork or clone this repository
+    -  `git clone https://github.com/pattytonyoneill/hangman.git`
+  -  Register in [Heroku.com](https://www.heroku.com)
+  
   -  Create a new Heroku app. 
-  -  Under settings set buildback to python.
-  -  Under settings set buildback to nodeJS.
+  -  Under "Settings" set buildback to **python**.
+  -  Under "Settings" set buildback to **nodeJS**.
+  -  Under "Settings" click "Reveal Config Vars", Set `PORT` to `8000`
   -  Link the app to the repository.
   -  Click on Deploy
+    -  select github
+    -  find repo
+    -  click connect button
+    -  enable automatic deployment
+    -  deploy branch
+    -  allow a few minutes for the app to build
+    -  then it deploys with live link
 
-The live link can be found here - 
+The live link can be found here - https://hangman44444.herokuapp.com/
 
 ## Credits
 
