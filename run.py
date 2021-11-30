@@ -45,7 +45,7 @@ def hangman():
 
     # getting user input
     while len(word_letters) > 0 and lives > 0:
-        # Tell user the lives lefft and the letters that were used
+        # Tell user the lives left and the letters that were used
         print(
             'You have', lives, 'lives left and you have used these letters: ',
             ' '.join(used_letters))
