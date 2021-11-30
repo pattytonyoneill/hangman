@@ -77,7 +77,7 @@ def hangman():
         elif user_letter in used_letters:
             clear()
             print(
-                '\nSorry, you have already used that letter. '
+                '\nSorry, you already used that letter. '
                 'Please guess another letter.')
 
         else:
