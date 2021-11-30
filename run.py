@@ -57,17 +57,20 @@ def hangman():
         if user_letter in alphabet - used_letters:
             used_letters.add(user_letter)
             if user_letter in word_letters:
+                clear()
                 word_letters.remove(user_letter)
                 print('')
 
             else:
                 # Removes a life if wrong
                 lives = lives - 1
+                clear()
                 print(
                     '\nSorry, your letter,', user_letter,
                     'is not in the word.')
 
         elif user_letter in used_letters:
+            clear()
             print(
                 '\nSorry, you have already used that letter. '
                 'Please guess another letter.')
