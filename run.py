@@ -1,18 +1,22 @@
 import os
+from os import system, name
 import random
 from words import words
 from hangman_visual import lives_visual_dict
 import string
-from os import system, name
 
 
 def clear():
+    """
+    Simple clear function that will clear the terminal.
+    This is to avoid clogging-up the screen.
+    """
     os.system("cls" if os.name == "nt" else "clear")
 
 
 def get_valid_word(words):
     """
-    Get valid words from my list of words 
+    Get valid words from my list of word
     """
     word = random.choice(words)
     while '-' in word or ' ' in word:
