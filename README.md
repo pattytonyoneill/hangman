@@ -22,6 +22,9 @@
 - ![image](testing/wrong_answer.jpg)
 - _Input validation and score checking_
 - ![image](testing/answer_checking.jpg)
+- _Clear Screen_
+- _Start Again to make the game replayable_
+
 
 ## User Stories:
 - _First time Visitor Goals_
