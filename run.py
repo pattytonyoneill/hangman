@@ -11,6 +11,9 @@ def clear():
 
 
 def get_valid_word(words):
+    """
+    Get valid words from my list of words 
+    """
     word = random.choice(words)
     while '-' in word or ' ' in word:
         word = random.choice(words)
@@ -84,6 +87,7 @@ def hangman():
 
 
 def play_again():
+    """Play Hangman game again """
     user_play_again = input('Do you want to play again? (Y/N) ').upper()
     if user_play_again == 'Y':
         hangman()
