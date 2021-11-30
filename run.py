@@ -25,6 +25,7 @@ def hangman():
     """
     The hangman game
     """
+    clear()
     word = get_valid_word(words)
     # letters in the word
     word_letters = set(word)
