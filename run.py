@@ -91,7 +91,7 @@ def hangman():
         print("\U0001F571")
     else:
         print('Yahoo! You guessed the word', word, '!!')
-        print("\U0001F923")
+        print("\U0001f44D")
     play_again()
 
 
