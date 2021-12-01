@@ -2,7 +2,7 @@ import os
 from os import system, name
 import random
 from words import words
-from hangman_visual import lives_dict
+from visual_hangman import lives_dict
 import string
 
 
@@ -33,7 +33,7 @@ def hangman():
     word = get_word(words)
     # letters in the word
     word_letters = set(word)
-    #have input of user changed to uppercase for better readablility
+    # have input of user changed to uppercase for better readablility
     alphabet = set(string.ascii_uppercase)
     # letters guessed by user
     used_letters = set()
@@ -44,7 +44,7 @@ def hangman():
     print('Good Luck!')
     print(' ')
 
-    # getting user input
+    # user input
     while len(word_letters) > 0 and lives > 0:
         # Tell user the lives left and the letters that were used
         print(
@@ -59,7 +59,7 @@ def hangman():
 
         # User Guesses
         print(word)
-        user_letter = input('Guess a letter: ').upper()
+        user_letter = input('Please guess one letter: ').upper()
         if user_letter in alphabet - used_letters:
             used_letters.add(user_letter)
             if user_letter in word_letters:
@@ -85,10 +85,10 @@ def hangman():
             clear()
             print('\nSorry, that is not a valid letter.')
 
-    # Get here when len(word_letters) == 0 OR when lives == 0
+    # Here when len(word_letters) == 0 OR when lives == 0
     if lives == 0:
         print(lives_dict[lives])
-        print('You died, sorry. The word was', word)
+        print('You died, sorry. Your word was', word)
         print("\U0001F571")
     else:
         print('Yahoo! You guessed the word', word, '!!')
