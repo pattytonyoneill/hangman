@@ -2,7 +2,7 @@ import os
 from os import system, name
 import random
 from words import words
-from hangman_visual import lives_visual_dict
+from hangman_visual import lives_dict
 import string
 
 
@@ -14,7 +14,7 @@ def clear():
     os.system("cls" if os.name == "nt" else "clear")
 
 
-def get_valid_word(words):
+def get_word(words):
     """
     Get valid words from my list of word
     """
@@ -30,15 +30,16 @@ def hangman():
     The hangman game
     """
     clear()
-    word = get_valid_word(words)
+    word = get_word(words)
     # letters in the word
     word_letters = set(word)
+    #have input of user changed to uppercase for better readablility
     alphabet = set(string.ascii_uppercase)
     # letters guessed by user
     used_letters = set()
-    lives = 7
+    lives = 9
     print('Welcome to Hangman!')
-    print('You have 7 lives. Please choose a letter.')
+    print('You have 9 lives. Please choose a letter.')
     print('If wrong loose a life and see the hangman go up.')
     print('Good Luck!')
     print(' ')
@@ -53,7 +54,7 @@ def hangman():
         # Current word
         word_list = [
             letter if letter in used_letters else '-' for letter in word]
-        print(lives_visual_dict[lives])
+        print(lives_dict[lives])
         print('Current word: ', ' '.join(word_list))
 
         # User Guesses
@@ -86,7 +87,7 @@ def hangman():
 
     # Get here when len(word_letters) == 0 OR when lives == 0
     if lives == 0:
-        print(lives_visual_dict[lives])
+        print(lives_dict[lives])
         print('You died, sorry. The word was', word)
         print("\U0001F571")
     else:

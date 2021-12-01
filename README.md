@@ -78,9 +78,9 @@ To view all testing, go to [TESTING.md]()
 The live link can be found here - https://hangman44444.herokuapp.com/
 
 ## Credits
--  [12 Beginner Python Projects](https://www.youtube.com/watch?v=8ext9G7xspg)- I watched this to help me decide on the game I would make.  I used the word list that she obtained from stack overflow and the hangman visual.  
--  [wordlist](https://www.randomlists.com/data/words.json)- This is the random list that I used.
--  [stack overflow](https://stackoverflow.com/questions/594273/how-to-pick-a-random-english-word-from-a-list)
+-  [12 Beginner Python Projects](https://www.youtube.com/watch?v=8ext9G7xspg)- I watched this to help me decide on the game I would make.  I used the word list that she obtained from stack overflow and used the idea of the hangman visual she made in video.  
+-  [wordlist](https://www.randomlists.com/data/words.json)- This is the random list that I used that was mentioned in the tutorial.
+-  [stack overflow](https://stackoverflow.com/questions/594273/how-to-pick-a-random-english-word-from-a-list) This is the article that the word list was mentioned in.
 
 ### Code
 - _Readme used sample readme from code institute as a model. [Github](https://github.com/Code-Institute-Solutions/readme-template/blob/master/README.md)_
