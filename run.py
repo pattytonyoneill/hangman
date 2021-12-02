@@ -8,15 +8,15 @@ import string
 
 def clear():
     """
-    Simple clear function that will clear the terminal.
-    This is to avoid clogging-up the screen.
+    Simple clear function that will clear the terminal screen.
+    This is to avoid clogging-up the screen and making it easier to read.
     """
     os.system("cls" if os.name == "nt" else "clear")
 
 
 def get_word(words):
     """
-    Get valid words from my list of word
+    Get a word from my list of words
     """
     word = random.choice(words)
     while '-' in word or ' ' in word:
@@ -40,7 +40,7 @@ def hangman():
     lives = 9
     print('Welcome to Hangman!')
     print('You have 9 lives. Please choose a letter.')
-    print('If wrong loose a life and see the hangman go up.')
+    print('If you are wrong loose a life and see the hangman go up.')
     print('Good Luck!')
     print(' ')
 
@@ -48,7 +48,7 @@ def hangman():
     while len(word_letters) > 0 and lives > 0:
         # Tell user the lives left and the letters that were used
         print(
-            'You have', lives, 'lives left and you have used these letters: ',
+            'You currently have', lives, 'lives left and you have used the following letters: ',
             ' '.join(used_letters))
 
         # Current word
@@ -59,7 +59,7 @@ def hangman():
 
         # User Guesses
         print(word)
-        user_letter = input('Please guess one letter: ').upper()
+        user_letter = input('Please, guess only one letter: ').upper()
         if user_letter in alphabet - used_letters:
             used_letters.add(user_letter)
             if user_letter in word_letters:
@@ -72,26 +72,26 @@ def hangman():
                 lives = lives - 1
                 clear()
                 print(
-                    '\nSorry, your letter,', user_letter,
+                    '\nSorry, that letter,', user_letter,
                     'is not in the word.')
 
         elif user_letter in used_letters:
             clear()
             print(
-                '\nSorry, you already used that letter. '
+                '\nSorry, you already used that letter. Please guess again.'
                 'Please guess another letter.')
 
         else:
             clear()
-            print('\nSorry, that is not a valid letter.')
+            print('\nSorry, that is not a valid letter.  Please guess again!')
 
     # Here when len(word_letters) == 0 OR when lives == 0
     if lives == 0:
         print(lives_dict[lives])
-        print('You died, sorry. Your word was', word)
+        print('You died, sorry. The correct word was', word)
         print("\U0001F571")
     else:
-        print('Yahoo! You guessed the word', word, '!!')
+        print('Yahoo! You guessed correctly', word, '!!')
         print("\U0001f44D")
     play_again()
 
