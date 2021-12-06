@@ -7,7 +7,7 @@ import string
 
 # letters guessed by user
 used_letters = set()
- # have input of user changed to uppercase for better readablility
+# have input of user changed to uppercase for better readablility
 alphabet = set(string.ascii_uppercase)
 
 
@@ -42,7 +42,6 @@ def hangman():
     # letters in the word
     word_letters = set(word)
     handle_input(word_letters)
-    
     print('Welcome to Hangman!')
     print('You have 9 lives. Please choose a letter.')
     print('If you are wrong loose a life and see the hangman go up.')
@@ -56,7 +55,7 @@ def hangman():
         update_game()
 
 
-def current_state(lives):       
+def current_state(lives):
     # Tell user the lives left and the letters that were used
     global used_letters
     print(
@@ -65,7 +64,8 @@ def current_state(lives):
         ' '.join(used_letters))
 
     # Current word
-    word_list = [letter if letter in used_letters else '-' for letter in used_letters]
+    word_list = [letter if letter in used_letters else '-'
+    for letter in used_letters]
     print(lives_dict[lives])
     print('Current word: ', ' '.join(word_list))
 
@@ -101,6 +101,7 @@ def handle_input(word_letters):
     else:
         clear()
         print('\nSorry, that is not a valid letter.  Please guess again!')
+
 
 def update_game():
     global lives

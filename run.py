@@ -5,6 +5,11 @@ from words import words
 from visual_hangman import lives_dict
 import string
 
+# letters guessed by user
+used_letters = set()
+# have input of user changed to uppercase for better readablility
+alphabet = set(string.ascii_uppercase)
+
 
 def clear():
     """
@@ -33,10 +38,6 @@ def hangman():
     word = get_word(words)
     # letters in the word
     word_letters = set(word)
-    #have input of user changed to uppercase for better readablility
-    alphabet = set(string.ascii_uppercase)
-    # letters guessed by user
-    used_letters = set()
     lives = 9
     print('Welcome to Hangman!')
     print('You have 9 lives. Please choose a letter.')
