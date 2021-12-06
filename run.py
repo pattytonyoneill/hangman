@@ -5,23 +5,18 @@ from words import words
 from visual_hangman import lives_dict
 import string
 
-# letters guessed by user
-used_letters = set()
-# have input of user changed to uppercase for better readablility
-alphabet = set(string.ascii_uppercase)
-
 
 def clear():
     """
-    Simple clear function that will clear the terminal screen.
-    This is to avoid clogging-up the screen and making it easier to read.
+    Simple clear function that will clear the terminal.
+    This is to avoid clogging-up the screen.
     """
     os.system("cls" if os.name == "nt" else "clear")
 
 
 def get_word(words):
     """
-    Get a word from my list of words
+    Get valid words from my list of word
     """
     word = random.choice(words)
     while '-' in word or ' ' in word:
@@ -38,6 +33,10 @@ def hangman():
     word = get_word(words)
     # letters in the word
     word_letters = set(word)
+    # have input of user changed to uppercase for better readablility
+    alphabet = set(string.ascii_uppercase)
+    # letters guessed by user
+    used_letters = set()
     lives = 9
     print('Welcome to Hangman!')
     print('You have 9 lives. Please choose a letter.')
@@ -45,7 +44,7 @@ def hangman():
     print('Good Luck!')
     print(' ')
 
-    # getting user input
+    # user input
     while len(word_letters) > 0 and lives > 0:
         # Tell user the lives left and the letters that were used
         print(
@@ -60,7 +59,7 @@ def hangman():
 
         # User Guesses
         print(word)
-        user_letter = input('Guess a letter: ').upper()
+        user_letter = input('Please guess one letter: ').upper()
         if user_letter in alphabet - used_letters:
             used_letters.add(user_letter)
             if user_letter in word_letters:
@@ -86,17 +85,15 @@ def hangman():
             clear()
             print('\nSorry, that is not a valid letter.')
 
-    # Get here when len(word_letters) == 0 OR when lives == 0
+    # Here when len(word_letters) == 0 OR when lives == 0
     if lives == 0:
         print(lives_dict[lives])
-        print('You died, sorry. The word was', word)
+        print('You died, sorry. Your word was', word)
         print("\U0001F571")
     else:
         print('Yahoo! You guessed the word', word, '!!')
         print("\U0001f44D")
     play_again()
-
-
 
 
 def play_again():
