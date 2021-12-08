@@ -10,16 +10,20 @@
 
 - When I added an update_game function it was just ending game instead of asking if you want to play again.  I just reworked code until I fixed it.
 
-- When I added the handle_input function it was repeating over and over "You have 9 lives left and you have used these letters:" 
+- When I added the handle_input function it was repeating over and over "You have 9 lives left and you have used these letters:"  I just had to rework the code until I fixed it. 
 
-- 
+- When doing second puzzle wasn't deleting the letters used in last puzzle so I had to add reset_game function to fix this error.
+
+
 
 
 ## Testing
 
 - I have manually tested this project by doing the following:
     - Given invalid inputs such as a number and a repeat of previous letter used.
+    - ![image](testing/notvalidletter.jpg)
     - Tested in my local terminal as well as on Heroku.
+    -![image](testing/testing_gitpod.jpg)
 
 ## Validator Testing
 -  Pep8
