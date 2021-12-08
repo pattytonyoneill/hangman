@@ -53,7 +53,7 @@ def hangman():
     while len(word_letters) > 0 and lives > 0:
         # Tell lives left & letters used in order to avoid duplication
         print(
-            'You still have', lives, 'lives left and you have used the following letters so far: ',
+            'You still have', lives, 'lives left and you have used the following letters so far:\n',
             ' '.join(used_letters))
 
         # Current word
@@ -62,7 +62,7 @@ def hangman():
         print(lives_dict[lives])
         print('Current word: ', ' '.join(word_list))
         handle_input(word_letters)
-        print(len(word_letters))
+       
     update_game()
 
 
@@ -94,8 +94,7 @@ def handle_input(word_letters):
     elif user_letter in used_letters:
         clear()
         print(
-            '\nSorry, you already used that letter. Please try another letter.'
-            'Please guess another letter.')
+            '\nSorry, you already used that letter. Please try another letter.')
 
     else:
         clear()
@@ -112,10 +111,10 @@ def update_game():
     if lives == 0:
         print(lives_dict[lives])
         print('You died, sorry. The correct word was', word)
-        print("\U0001F571")
+        print("☠️")
     else:
         print('Yahoo! You guessed correctly', word, '!!')
-        print("\U0001f44D")
+        print("👍")
     play_again()
 
 
