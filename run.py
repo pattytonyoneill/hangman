@@ -7,15 +7,16 @@ import string
 
 # letters guessed by user
 used_letters = set()
-# have input of user changed to uppercase for better readablility
+# have input of user modified to uppercase for higher readablility
 alphabet = set(string.ascii_uppercase)
 lives = 0
 
 
 def clear():
     """
-    Simple clear function that will clear the terminal.
-    This is to avoid clogging-up the screen.
+    Straightforward clear function that will clear the terminal.
+    This is to assist in avoiding clogging-up the screen and to make the game 
+    easier to read.
     """
     os.system("cls" if os.name == "nt" else "clear")
 
@@ -33,13 +34,13 @@ def get_word(words):
 
 def hangman():
     """
-    The hangman game
+    The starting point of my hangman game
     """
     global lives
     global word
     clear()
     word = get_word(words)
-    # letters in the word
+    # letters in the word that is used in the game
     word_letters = set(word)
     lives = 9
     print('Welcome to Hangman!')
@@ -50,9 +51,9 @@ def hangman():
 
     # user input
     while len(word_letters) > 0 and lives > 0:
-        # Tell user the lives left and the letters that were used
+        # Tell lives left & letters used in order to avoid duplication
         print(
-            'You have', lives, 'lives left and you have used these letters: ',
+            'You still have', lives, 'lives left and you have used the following letters so far: ',
             ' '.join(used_letters))
 
         # Current word
@@ -93,17 +94,17 @@ def handle_input(word_letters):
     elif user_letter in used_letters:
         clear()
         print(
-            '\nSorry, you already used that letter. Please guess again.'
+            '\nSorry, you already used that letter. Please try another letter.'
             'Please guess another letter.')
 
     else:
         clear()
-        print('\nSorry, that is not a valid letter.  Please guess again!')
+        print('\nSorry, that is not a valid letter.  Please guess a letter!')
 
 
 def update_game():
     """
-    Update game information if solved or lost
+    Update game data if solved or lost
     """
     global lives
     global word
@@ -119,7 +120,7 @@ def update_game():
 
 
 def play_again():
-    """Play Hangman game again or end game"""
+    """Play Hangman game once more or finish the game"""
     user_play_again = input('Do you want to play again? (Y/N) ').upper()
     if user_play_again == 'Y':
         reset_game()
@@ -132,7 +133,7 @@ def play_again():
 
 def reset_game():
     """
-    Reset Hangman Game after done a game
+    Reset Hangman Game when completed a game
     """
     used_letters.clear()
     lives = 0
