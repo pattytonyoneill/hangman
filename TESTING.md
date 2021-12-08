@@ -1,5 +1,7 @@
+Return back to [README.md](README.md)
+
 ## Remaining Bugs
-- No bugs are remaining
+- No bugs are remaining that I am aware of.
 
 ## Bugs
 - Getting while loop to work correctly. First, I took a couple of days away from the code. Next I rewrote this several times until I got it right.
@@ -14,7 +16,11 @@
 
 - When doing second puzzle wasn't deleting the letters used in last puzzle so I had to add reset_game function to fix this error.
 
-
+## User Stories testing:
+- _First time Visitor Goals_
+  - As a first time user of this site, I would like to be able to easily decifer the main purpose of the game
+  - As a first time user, I would like to be able to easily navigate the game
+  - As a first time user, I would like to see how many lives that I have left
 
 
 ## Testing
@@ -23,7 +29,9 @@
     - Given invalid inputs such as a number and a repeat of previous letter used.
     - ![image](testing/notvalidletter.jpg)
     - Tested in my local terminal as well as on Heroku.
-    -![image](testing/testing_gitpod.jpg)
+    - ![image](testing/testing_gitpod.jpg)
+    - ![image](testing/testing_heroku.jpg)
+
 
 ## Validator Testing
 -  Pep8
