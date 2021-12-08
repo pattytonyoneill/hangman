@@ -1,7 +1,7 @@
 Return back to [README.md](README.md)
 
 ## Remaining Bugs
-- No bugs are remaining that I am aware of.
+- No bugs are remaining that I am aware of with the exception of when on firefox the emojis are cut off.
 
 ## Bugs
 - Getting while loop to work correctly. First, I took a couple of days away from the code. Next I rewrote this several times until I got it right.
@@ -38,5 +38,11 @@ Return back to [README.md](README.md)
 
 
 ## Validator Testing
--  Pep8
+-  Pep8 for run.py
      - ![image](testing/pep8.png)
+
+-  Pep8 for words.py
+     - ![image](testing/testing_pep8_words.py.jpg)
+
+-  Pep8 for visual_hangman.py
+     - ![image](testing/testing_pep8_visual_hangman.png)
