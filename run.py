@@ -48,8 +48,6 @@ def hangman():
     print('Good Luck!')
     print(' ')
 
-
-
     # user input
     while len(word_letters) > 0 and lives > 0:
         # Tell user the lives left and the letters that were used
@@ -101,7 +99,7 @@ def handle_input(word_letters):
     else:
         clear()
         print('\nSorry, that is not a valid letter.  Please guess again!')
-    
+
 
 def update_game():
     """
@@ -118,6 +116,7 @@ def update_game():
         print('Yahoo! You guessed correctly', word, '!!')
         print("\U0001f44D")
     play_again()
+
 
 def play_again():
     """Play Hangman game again or end game"""
