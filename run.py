@@ -63,7 +63,6 @@ def hangman():
         print(lives_dict[lives])
         print('Current word: ', ' '.join(word_list))
         handle_input(word_letters)
-     
     update_game()
 
 
