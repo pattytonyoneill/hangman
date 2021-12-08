@@ -23,8 +23,11 @@ Return back to [README.md](README.md)
 ## User Stories testing:
 - _First time Visitor Goals_
   - As a first time user of this site, I would like to be able to easily decifer the main purpose of the game
+    - ![image](testing/testing_story1.png)
   - As a first time user, I would like to be able to easily navigate the game
+    - ![image](testing/testing_heroku.png)
   - As a first time user, I would like to see how many lives that I have left
+    - ![image](testing/start_of_hangman.jpg)
 
 
 ## Testing
