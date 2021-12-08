@@ -16,7 +16,7 @@
 
 ## Existing Features
 - _Random word generation_
-- _Accepts user input_s
+- _Accepts user inputs_
 - ![image](testing/start_of_hangman.jpg)
 - _Keeps track of right and wrong guesses_
 - ![image](testing/wrong_answer.jpg)
@@ -34,7 +34,7 @@
 
 ## Languages Used:
 
-- _Python_
+- [Python](https://www.python.org/): used to built all of the Python functionality
 
 ## Frameworks, Libraries & Programs Used:
 
@@ -52,13 +52,13 @@
 
 ## Testing
 
-To view all testing, go to [TESTING.md]()
+To view all testing, go to [TESTING.md](TESTING.md)
 
 ## Deployment
 
 - The site was deployed to Heroku. I used the steps listed below to deploy. 
   -  Fork or clone this repository
-    -  `git clone https://github.com/pattytonyoneill/hangman.git`
+      -  `git clone https://github.com/pattytonyoneill/hangman.git`
   -  Register in [Heroku.com](https://www.heroku.com)
   
   -  Create a new Heroku app. 
