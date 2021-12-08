@@ -71,7 +71,6 @@ def handle_input(word_letters):
     Handle User input
     """
     # User Guesses
-    print(word)
     global alphabet
     global used_words
     global lives
