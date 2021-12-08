@@ -15,7 +15,7 @@ lives = 0
 def clear():
     """
     Straightforward clear function that will clear the terminal.
-    This is to assist in avoiding clogging-up the screen and to make the game 
+    This is to assist in avoiding clogging-up the screen and to make the game
     easier to read.
     """
     os.system("cls" if os.name == "nt" else "clear")
@@ -53,7 +53,8 @@ def hangman():
     while len(word_letters) > 0 and lives > 0:
         # Tell lives left & letters used in order to avoid duplication
         print(
-            'You still have', lives, 'lives left and you have used the following letters so far:\n',
+            'You still have', lives,
+            'lives left and you have used the following letters so far:\n',
             ' '.join(used_letters))
 
         # Current word
@@ -62,7 +63,7 @@ def hangman():
         print(lives_dict[lives])
         print('Current word: ', ' '.join(word_list))
         handle_input(word_letters)
-       
+     
     update_game()
 
 
@@ -94,7 +95,8 @@ def handle_input(word_letters):
     elif user_letter in used_letters:
         clear()
         print(
-            '\nSorry, you already used that letter. Please try another letter.')
+            '\nSorry, you already used that letter.'
+            'Please try another letter.')
 
     else:
         clear()
@@ -136,6 +138,7 @@ def reset_game():
     """
     used_letters.clear()
     lives = 0
+
 
 if __name__ == '__main__':
     hangman()
