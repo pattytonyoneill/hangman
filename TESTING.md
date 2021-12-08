@@ -32,6 +32,9 @@ Return back to [README.md](README.md)
 
 ## Testing
 
+- While testing I had the word that was chosen visible in order to make sure the game was working correctly easier.
+    - ![image](testing/testing_story1.png)
+
 - I have manually tested this project by doing the following:
     - Given invalid inputs such as a number and a repeat of previous letter used.
     - ![image](testing/notvalidletter.jpg)
