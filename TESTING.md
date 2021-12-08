@@ -8,6 +8,12 @@
 
 - When I added a clear message my welcome message was not showing.  I fixed this by putting clear under individual statements in the code so it clears.
 
+- When I added an update_game function it was just ending game instead of asking if you want to play again.  I just reworked code until I fixed it.
+
+- When I added the handle_input function it was repeating over and over "You have 9 lives left and you have used these letters:" 
+
+- 
+
 
 ## Testing
 
