@@ -16,6 +16,10 @@ Return back to [README.md](README.md)
 
 - When doing second puzzle wasn't deleting the letters used in last puzzle so I had to add reset_game function to fix this error.
 
+- When using firefox the emojis are cut off.
+- ![image](testing/testing_firefox.jpg)
+- ![image](testing/testing_skull.jpg)
+
 ## User Stories testing:
 - _First time Visitor Goals_
   - As a first time user of this site, I would like to be able to easily decifer the main purpose of the game
