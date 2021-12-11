@@ -24,7 +24,7 @@
 - ![image](testing/answer_checking.jpg)
 - _Clear Screen_
 - _Start Again to make the game replayable_
-
+- ![image](testing/testing_firefox.jpg)
 
 ## User Stories:
 - _First time Visitor Goals_
