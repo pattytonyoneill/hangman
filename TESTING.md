@@ -40,7 +40,7 @@ Return back to [README.md](README.md)
     - ![image](testing/notvalidletter.jpg)
     - Tested in my local terminal as well as on Heroku.
     - ![image](testing/testing_gitpod.jpg)
-    - ![image](testing/testing_heroku.jpg)
+    - ![image](testing/testing_heroku.png)
 
 
 ## Validator Testing
